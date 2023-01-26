@@ -9,37 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var people: [String] = []
-    
-    @State private var isLoading: Bool = false
+    @StateObject var vm: PeopleViewModel = .init()
     
     var body: some View {
+        
         VStack {
-            if isLoading {
+            if vm.isLoading {
                 ProgressView()
                 Text("Loading...")
                     .padding()
             } else {
-                Text(people.isEmpty ? "No Users" : "Manage to get \(people.count) users")
+                Text(vm.people.isEmpty ? "No Users" : "Managed to get \(vm.people.count) users")
             }
-            
             Button {
-                fetchPeople()
+                vm.fetchPeople()
             } label: {
                 Text("Fetch some people")
             }
 
-        }
-    }
-}
-
-private extension ContentView {
-    
-    func fetchPeople() {
-        isLoading = true
-        DispatchQueue.main.asyncAfer(deadline: .now() + 1.5) {
-            people = ["tunds", "Billy", "Bob", "Aimie"]
-            isLoading = false
         }
     }
 }

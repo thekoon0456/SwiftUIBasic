@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64C2AE102790ABBC00F30512 /* UsingStateInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2AE0F2790ABBC00F30512 /* UsingStateInSwiftUIApp.swift */; };
-		64C2AE122790ABBC00F30512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2AE112790ABBC00F30512 /* ContentView.swift */; };
-		64C2AE142790ABC000F30512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2AE132790ABC000F30512 /* Assets.xcassets */; };
-		64C2AE172790ABC000F30512 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2AE162790ABC000F30512 /* Preview Assets.xcassets */; };
-		7CE959D629825275007516D2 /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE959D529825275007516D2 /* CustomLoadingView.swift */; };
+		643EB4B3279EF07E00E0C36C /* DividerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EB4B2279EF07E00E0C36C /* DividerSwiftUIApp.swift */; };
+		643EB4B5279EF07E00E0C36C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EB4B4279EF07E00E0C36C /* ContentView.swift */; };
+		643EB4B7279EF08100E0C36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643EB4B6279EF08100E0C36C /* Assets.xcassets */; };
+		643EB4BA279EF08100E0C36C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643EB4B9279EF08100E0C36C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		64C2AE0C2790ABBC00F30512 /* UsingStateInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingStateInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		64C2AE0F2790ABBC00F30512 /* UsingStateInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingStateInSwiftUIApp.swift; sourceTree = "<group>"; };
-		64C2AE112790ABBC00F30512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		64C2AE132790ABC000F30512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		64C2AE162790ABC000F30512 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7CE959D529825275007516D2 /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		643EB4AF279EF07E00E0C36C /* DividerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DividerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		643EB4B2279EF07E00E0C36C /* DividerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerSwiftUIApp.swift; sourceTree = "<group>"; };
+		643EB4B4279EF07E00E0C36C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		643EB4B6279EF08100E0C36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		643EB4B9279EF08100E0C36C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		64C2AE092790ABBC00F30512 /* Frameworks */ = {
+		643EB4AC279EF07E00E0C36C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64C2AE032790ABBC00F30512 = {
+		643EB4A6279EF07E00E0C36C = {
 			isa = PBXGroup;
 			children = (
-				64C2AE0E2790ABBC00F30512 /* UsingStateInSwiftUI */,
-				64C2AE0D2790ABBC00F30512 /* Products */,
+				643EB4B1279EF07E00E0C36C /* DividerSwiftUI */,
+				643EB4B0279EF07E00E0C36C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		64C2AE0D2790ABBC00F30512 /* Products */ = {
+		643EB4B0279EF07E00E0C36C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64C2AE0C2790ABBC00F30512 /* UsingStateInSwiftUI.app */,
+				643EB4AF279EF07E00E0C36C /* DividerSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		64C2AE0E2790ABBC00F30512 /* UsingStateInSwiftUI */ = {
+		643EB4B1279EF07E00E0C36C /* DividerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				64C2AE0F2790ABBC00F30512 /* UsingStateInSwiftUIApp.swift */,
-				64C2AE112790ABBC00F30512 /* ContentView.swift */,
-				7CE959D529825275007516D2 /* CustomLoadingView.swift */,
-				64C2AE132790ABC000F30512 /* Assets.xcassets */,
-				64C2AE152790ABC000F30512 /* Preview Content */,
+				643EB4B2279EF07E00E0C36C /* DividerSwiftUIApp.swift */,
+				643EB4B4279EF07E00E0C36C /* ContentView.swift */,
+				643EB4B6279EF08100E0C36C /* Assets.xcassets */,
+				643EB4B8279EF08100E0C36C /* Preview Content */,
 			);
-			path = UsingStateInSwiftUI;
+			path = DividerSwiftUI;
 			sourceTree = "<group>";
 		};
-		64C2AE152790ABC000F30512 /* Preview Content */ = {
+		643EB4B8279EF08100E0C36C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				64C2AE162790ABC000F30512 /* Preview Assets.xcassets */,
+				643EB4B9279EF08100E0C36C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		64C2AE0B2790ABBC00F30512 /* UsingStateInSwiftUI */ = {
+		643EB4AE279EF07E00E0C36C /* DividerSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64C2AE1A2790ABC000F30512 /* Build configuration list for PBXNativeTarget "UsingStateInSwiftUI" */;
+			buildConfigurationList = 643EB4BD279EF08100E0C36C /* Build configuration list for PBXNativeTarget "DividerSwiftUI" */;
 			buildPhases = (
-				64C2AE082790ABBC00F30512 /* Sources */,
-				64C2AE092790ABBC00F30512 /* Frameworks */,
-				64C2AE0A2790ABBC00F30512 /* Resources */,
+				643EB4AB279EF07E00E0C36C /* Sources */,
+				643EB4AC279EF07E00E0C36C /* Frameworks */,
+				643EB4AD279EF07E00E0C36C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UsingStateInSwiftUI;
-			productName = UsingStateInSwiftUI;
-			productReference = 64C2AE0C2790ABBC00F30512 /* UsingStateInSwiftUI.app */;
+			name = DividerSwiftUI;
+			productName = DividerSwiftUI;
+			productReference = 643EB4AF279EF07E00E0C36C /* DividerSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		64C2AE042790ABBC00F30512 /* Project object */ = {
+		643EB4A7279EF07E00E0C36C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					64C2AE0B2790ABBC00F30512 = {
+					643EB4AE279EF07E00E0C36C = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 64C2AE072790ABBC00F30512 /* Build configuration list for PBXProject "UsingStateInSwiftUI" */;
+			buildConfigurationList = 643EB4AA279EF07E00E0C36C /* Build configuration list for PBXProject "DividerSwiftUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 64C2AE032790ABBC00F30512;
-			productRefGroup = 64C2AE0D2790ABBC00F30512 /* Products */;
+			mainGroup = 643EB4A6279EF07E00E0C36C;
+			productRefGroup = 643EB4B0279EF07E00E0C36C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64C2AE0B2790ABBC00F30512 /* UsingStateInSwiftUI */,
+				643EB4AE279EF07E00E0C36C /* DividerSwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		64C2AE0A2790ABBC00F30512 /* Resources */ = {
+		643EB4AD279EF07E00E0C36C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C2AE172790ABC000F30512 /* Preview Assets.xcassets in Resources */,
-				64C2AE142790ABC000F30512 /* Assets.xcassets in Resources */,
+				643EB4BA279EF08100E0C36C /* Preview Assets.xcassets in Resources */,
+				643EB4B7279EF08100E0C36C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		64C2AE082790ABBC00F30512 /* Sources */ = {
+		643EB4AB279EF07E00E0C36C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C2AE122790ABBC00F30512 /* ContentView.swift in Sources */,
-				7CE959D629825275007516D2 /* CustomLoadingView.swift in Sources */,
-				64C2AE102790ABBC00F30512 /* UsingStateInSwiftUIApp.swift in Sources */,
+				643EB4B5279EF07E00E0C36C /* ContentView.swift in Sources */,
+				643EB4B3279EF07E00E0C36C /* DividerSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		64C2AE182790ABC000F30512 /* Debug */ = {
+		643EB4BB279EF08100E0C36C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		64C2AE192790ABC000F30512 /* Release */ = {
+		643EB4BC279EF08100E0C36C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,14 +261,14 @@
 			};
 			name = Release;
 		};
-		64C2AE1B2790ABC000F30512 /* Debug */ = {
+		643EB4BE279EF08100E0C36C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UsingStateInSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DividerSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = HD69KLV277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -286,7 +282,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tundsdev.UsingStateInSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tundsdev.DividerSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,14 +290,14 @@
 			};
 			name = Debug;
 		};
-		64C2AE1C2790ABC000F30512 /* Release */ = {
+		643EB4BF279EF08100E0C36C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UsingStateInSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DividerSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = HD69KLV277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -315,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tundsdev.UsingStateInSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tundsdev.DividerSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64C2AE072790ABBC00F30512 /* Build configuration list for PBXProject "UsingStateInSwiftUI" */ = {
+		643EB4AA279EF07E00E0C36C /* Build configuration list for PBXProject "DividerSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64C2AE182790ABC000F30512 /* Debug */,
-				64C2AE192790ABC000F30512 /* Release */,
+				643EB4BB279EF08100E0C36C /* Debug */,
+				643EB4BC279EF08100E0C36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64C2AE1A2790ABC000F30512 /* Build configuration list for PBXNativeTarget "UsingStateInSwiftUI" */ = {
+		643EB4BD279EF08100E0C36C /* Build configuration list for PBXNativeTarget "DividerSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64C2AE1B2790ABC000F30512 /* Debug */,
-				64C2AE1C2790ABC000F30512 /* Release */,
+				643EB4BE279EF08100E0C36C /* Debug */,
+				643EB4BF279EF08100E0C36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 64C2AE042790ABBC00F30512 /* Project object */;
+	rootObject = 643EB4A7279EF07E00E0C36C /* Project object */;
 }

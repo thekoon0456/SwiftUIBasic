@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64C2AE102790ABBC00F30512 /* UsingStateInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2AE0F2790ABBC00F30512 /* UsingStateInSwiftUIApp.swift */; };
+		64C2AE102790ABBC00F30512 /* ObservableObject andPublished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2AE0F2790ABBC00F30512 /* ObservableObject andPublished.swift */; };
 		64C2AE122790ABBC00F30512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2AE112790ABBC00F30512 /* ContentView.swift */; };
 		64C2AE142790ABC000F30512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2AE132790ABC000F30512 /* Assets.xcassets */; };
 		64C2AE172790ABC000F30512 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C2AE162790ABC000F30512 /* Preview Assets.xcassets */; };
-		7CE959D629825275007516D2 /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE959D529825275007516D2 /* CustomLoadingView.swift */; };
+		7C51236E298259F900E5FA8F /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C51236D298259F900E5FA8F /* PeopleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64C2AE0C2790ABBC00F30512 /* UsingStateInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingStateInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		64C2AE0F2790ABBC00F30512 /* UsingStateInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingStateInSwiftUIApp.swift; sourceTree = "<group>"; };
+		64C2AE0F2790ABBC00F30512 /* ObservableObject andPublished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject andPublished.swift"; sourceTree = "<group>"; };
 		64C2AE112790ABBC00F30512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64C2AE132790ABC000F30512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C2AE162790ABC000F30512 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7CE959D529825275007516D2 /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		7C51236D298259F900E5FA8F /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 		64C2AE032790ABBC00F30512 = {
 			isa = PBXGroup;
 			children = (
-				64C2AE0E2790ABBC00F30512 /* UsingStateInSwiftUI */,
+				64C2AE0E2790ABBC00F30512 /* ObservableObject andPublished */,
 				64C2AE0D2790ABBC00F30512 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,16 +50,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		64C2AE0E2790ABBC00F30512 /* UsingStateInSwiftUI */ = {
+		64C2AE0E2790ABBC00F30512 /* ObservableObject andPublished */ = {
 			isa = PBXGroup;
 			children = (
-				64C2AE0F2790ABBC00F30512 /* UsingStateInSwiftUIApp.swift */,
+				64C2AE0F2790ABBC00F30512 /* ObservableObject andPublished.swift */,
+				7C51236D298259F900E5FA8F /* PeopleViewModel.swift */,
 				64C2AE112790ABBC00F30512 /* ContentView.swift */,
-				7CE959D529825275007516D2 /* CustomLoadingView.swift */,
 				64C2AE132790ABC000F30512 /* Assets.xcassets */,
 				64C2AE152790ABC000F30512 /* Preview Content */,
 			);
-			path = UsingStateInSwiftUI;
+			path = "ObservableObject andPublished";
 			sourceTree = "<group>";
 		};
 		64C2AE152790ABC000F30512 /* Preview Content */ = {
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 64C2AE072790ABBC00F30512 /* Build configuration list for PBXProject "UsingStateInSwiftUI" */;
+			buildConfigurationList = 64C2AE072790ABBC00F30512 /* Build configuration list for PBXProject "ObservableObject andPublished" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C2AE122790ABBC00F30512 /* ContentView.swift in Sources */,
-				7CE959D629825275007516D2 /* CustomLoadingView.swift in Sources */,
-				64C2AE102790ABBC00F30512 /* UsingStateInSwiftUIApp.swift in Sources */,
+				7C51236E298259F900E5FA8F /* PeopleViewModel.swift in Sources */,
+				64C2AE102790ABBC00F30512 /* ObservableObject andPublished.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UsingStateInSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ObservableObject andPublished/Preview Content\"";
 				DEVELOPMENT_TEAM = HD69KLV277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -301,7 +301,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UsingStateInSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ObservableObject andPublished/Preview Content\"";
 				DEVELOPMENT_TEAM = HD69KLV277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64C2AE072790ABBC00F30512 /* Build configuration list for PBXProject "UsingStateInSwiftUI" */ = {
+		64C2AE072790ABBC00F30512 /* Build configuration list for PBXProject "ObservableObject andPublished" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64C2AE182790ABC000F30512 /* Debug */,
