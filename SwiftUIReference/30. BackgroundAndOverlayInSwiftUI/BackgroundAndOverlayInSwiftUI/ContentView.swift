@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             VStack {
-                
+                //기본
                 Text("5")
                     .font(.footnote.weight(.bold))
                     .padding()
@@ -21,10 +21,11 @@ struct ContentView: View {
                             .symbolVariant(.fill)
                             .foregroundColor(.white)
                             .font(.system(size: 32))
-                            .offset(y: -2)
+                            .offset(y: -2) //background 위치 조정 가능
                     }
                     .background(.yellow)
-            
+                
+                //background 안에 여러 뷰들이 올 수 있음
                 Text("5")
                     .font(.footnote.weight(.bold))
                     .padding()
@@ -40,6 +41,7 @@ struct ContentView: View {
                             .offset(y: -2)
                     }
                 
+                //background에서 처음 쓴 뷰가 젤 밑으로 감. 마지막 코드가 젤 위로. 코드 순서에 따라 달라짐
                 Text("5")
                     .font(.footnote.weight(.bold))
                     .padding()
@@ -55,6 +57,7 @@ struct ContentView: View {
                             .fill(.mint)
                     }
                 
+                //alignment 수정자 사용가능. 별이 뷰 가장 위로 올라감
                 Text("5")
                     .font(.footnote.weight(.bold))
                     .padding()
@@ -67,7 +70,10 @@ struct ContentView: View {
                             .offset(y: -2)
 
                     }
+                //MARK: - background와 overlay의 차이점
+                //유일한 차이점은 background: 뒤쪽, overlay는 뷰가 앞쪽으로 이동
                 
+                //overlay가 가장 위로 올라옴. alignment 사용해 위치를 .bottom으로 내림
                 Image("tundsdev")
                     .resizable()
                     .frame(width: 100,
@@ -87,6 +93,7 @@ struct ContentView: View {
                             )
                     }
                 
+                //overlay안에서 background 활용
                 Image("tundsdev")
                     .resizable()
                     .frame(width: 100,
