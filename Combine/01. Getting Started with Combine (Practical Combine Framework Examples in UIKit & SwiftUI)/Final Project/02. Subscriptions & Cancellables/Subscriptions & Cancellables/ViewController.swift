@@ -8,6 +8,15 @@
 import UIKit
 import Combine
 
+//MARK: - Combine - Reactive Programming: 어떤 종류의 이벤트를 수신하는 객체가 변경사항 등의 값을 수신하면 이에 반응함. 컴바인으로 작업할때 UI가 변경사항에 반응하도록 만듬
+/*
+ 두 가지 큰 개념
+ 1. Publishers: 게시자. 이벤트를 내보냄
+ 2. Subscriptions: 구독. 변경되거나 전송되는 이벤트를 받음
+ Switch (Publisher) → 켜거나 끌때 이벤트 발생 → Light Bulb (Subscription)
+ - 집에서 불 켜거나 끄기 위해 스위치 누름           - 전구 조명이 켜지거나 꺼짐
+ */
+
 class ViewController: UIViewController {
 
     private let countLbl: UILabel = {
@@ -64,14 +73,13 @@ class ViewController: UIViewController {
     @objc
     func startTimer() {
         print("Start")
-        //subscription에 타이머 저장
-        subscription = Timer //타이머 사용
-            .publish(every: 1, on: .main, in: .common) //publish 사용 - 타이머 개체 자체에 대한 publisher 생성 / 기본적으로 매 초마다 메인 스레드에서 타이머 실행
-            .autoconnect() //타이머를 publisher에 연결 - 타이머의 변경사랑을 들을 수 있음.
-            .scan(0, { (count, _) in //값을 생성하고 변경할 수 있도록 허용. 0에서 스캔하고 1씩 count를 증가시킴
+        subscription = Timer //Timer: NSObject. 1. subscription에 타이머 저장
+            .publish(every: 1, on: .main, in: .common) //2. publish 사용 - 타이머 개체 자체에 대한 publisher 생성 / 기본적으로 every: 1: 매 초마다, on: .main: 메인 스레드에서 타이머 실행
+            .autoconnect() //3. 타이머를 publisher에 연결 - 타이머의 변경사항을 들을 수 있음.
+            .scan(0, { (count, _) in //4. 값을 생성하고 변경할 수 있도록 허용. 0에서 스캔하고 1씩 count를 증가시킴
                 return count + 1
             })
-            .sink(receiveCompletion: { completion in //sink: 구독, completion handler 2개 있음
+            .sink(receiveCompletion: { completion in //5. sink: 구독, completion handler 2개 있음
                 print("Stream has completed") //completion: 구독이 완료되고 종료될때
             }, receiveValue: { count in //receiveValue: 구독 내부의 값이 변경될때
                 print("Updating the label to the current value: \(count.format)")
