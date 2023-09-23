@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         return lbl
     }()
     
-    private var subscriptions = Set<AnyCancellable>()
+    private var subscriptions = Set<AnyCancellable>() //구독할 subscriptions 생성 - 여러 textfield를 바인딩 - set으로 할당
     
     override func loadView() {
         super.loadView()
@@ -56,15 +56,16 @@ private extension ViewController {
         ])
     }
     
+    //구독 설정
     func createSubscriptions() {
-        
-        NotificationCenter
+        //textfield와 lable 바인딩
+        NotificationCenter //알람센터 사용 - 기본 알람 프레임워크
             .default
-            .publisher(for: UITextField.textDidChangeNotification,
-                       object: inputTxtField)
-            .compactMap { ($0.object as? UITextField)?.text }
+            .publisher(for: UITextField.textDidChangeNotification, //textfield 변경 알림 듣기 위해
+                       object: inputTxtField) //입력되는 텍스트필드
+            .compactMap { ($0.object as? UITextField)?.text } //UITextField로 타입 변환한 다음 엑세스. campactMap으로 nil제거
             .map { "The user entered: \($0)" }
-            .assign(to: \.text, on: textLbl)
-            .store(in: &subscriptions)
+            .assign(to: \.text, on: textLbl) //textLBl에 text값 할당. keypath인 레이블의 text속성 할당
+            .store(in: &subscriptions) //구독을 저장하고, text publisher 설정. &은 입력 및 출력 속성(in&out)을 의미
     }
 }
