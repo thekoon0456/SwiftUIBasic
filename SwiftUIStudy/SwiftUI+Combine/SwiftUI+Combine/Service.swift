@@ -13,6 +13,19 @@ enum NetworkError: Error {
     case invalidResponse
     case responseError(statusCode: Int)
     case jsonDecodingError(error: Error)
+    
+    var errorDescription: String {
+        switch self {
+        case .invalidRequest:
+            "유효하지 않은 요청입니다"
+        case .invalidResponse:
+            "유효하지 않은 응답입니다"
+        case .responseError(let statusCode):
+            "응답 에러코드: \(statusCode)"
+        case .jsonDecodingError(let error):
+            "JSON 파싱 에러입니다. \(error)"
+        }
+    }
 }
 
 class GithubService {
@@ -20,7 +33,7 @@ class GithubService {
         guard let id = userId, !id.isEmpty,
               let url = URL(string: "https://api.github.com/users/\(id)")
         else {
-            print("DEBUG: NetworkError: \(NetworkError.invalidRequest)")
+            print("DEBUG: NetworkError: \(NetworkError.invalidRequest.errorDescription)")
             return Fail(error: NetworkError.invalidRequest)
             .eraseToAnyPublisher()
         }

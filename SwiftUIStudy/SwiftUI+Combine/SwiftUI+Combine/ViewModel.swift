@@ -29,8 +29,10 @@ class ViewModel: ObservableObject {
                     isLoading = false
                 case .failure(let error):
                     isLoading = false
-                    print("DEBUG: Nerwork Error: \(error.localizedDescription)")
-                    errorMessage = error.localizedDescription
+                    if let error = error as? NetworkError {
+                        print("DEBUG: Nerwork Error: \(error.errorDescription)")
+                        errorMessage = error.errorDescription
+                    }
                     user = nil
                 }
             } receiveValue: { user in

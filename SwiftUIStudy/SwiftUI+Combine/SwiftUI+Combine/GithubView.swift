@@ -28,7 +28,7 @@ struct GithubView: View {
             } else {
                 Group {
                     if vm.errorMessage != nil {
-                        Text("통신 에러입니다 \(vm.errorMessage!)")
+                        Text("통신 에러: \(vm.errorMessage!)")
                     }
                     
                     TextField("아이디를 입력해주세요",
