@@ -19,9 +19,9 @@ class ViewModel: ObservableObject {
     func fetchUser() {
         isLoading = true
         print(#function)
-        print("userId: \(userId)")
         service
             .fetchUser(userId: userId)
+            .receive(on: DispatchQueue.main) //sink아래 스레드
             .sink { [weak self] completion in
                 guard let self else { return }
                 switch completion {

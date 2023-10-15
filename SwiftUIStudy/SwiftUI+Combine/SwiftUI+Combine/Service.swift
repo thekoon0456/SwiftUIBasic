@@ -58,7 +58,7 @@ class GithubService {
                     return error
                 }
             }
-            .receive(on: DispatchQueue.main)
+            .subscribe(on: DispatchQueue.global()) //데이터 받아오는 스레드
             .eraseToAnyPublisher()
     }
 }

@@ -58,7 +58,6 @@ struct GithubView: View {
                 }
             }
             
-            
             Button {
                 vm.fetchUser()
             } label: {
