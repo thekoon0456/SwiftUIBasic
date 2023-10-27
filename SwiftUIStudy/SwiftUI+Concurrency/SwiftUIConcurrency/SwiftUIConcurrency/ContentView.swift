@@ -109,21 +109,22 @@ struct ContentView: View {
                             //직렬로 진행됨, 에러 던지지않음
                             await withTaskGroup(of: Void.self) { group in
                                 //각자 그룹에 addTask해주면 병렬로 실행됨
-                                group.addTask {
-                                    if let data = try? Data(contentsOf: urlArr[0]) {
-                                        downloadedImage4 = UIImage(data: data)
-                                    }
-                                }
-                                
-                                group.addTask {
-                                    if let data = try? Data(contentsOf: urlArr[1]) {
-                                        downloadedImage5 = UIImage(data: data)
-                                    }
-                                }
-                                
-                                group.addTask {
-                                    if let data = try? Data(contentsOf: urlArr[2]) {
-                                        downloadedImage6 = UIImage(data: data)
+                                for i in 0...2 {
+                                    group.addTask {
+                                        if let data = try? Data(contentsOf: urlArr[i]) {
+                                            if i == 0 {
+                                                downloadedImage4 = UIImage(data: data)
+                                            }
+                                            
+                                            if i == 1 {
+                                                downloadedImage5 = UIImage(data: data)
+                                            }
+                                            
+                                            if i == 2 {
+                                                downloadedImage6 = UIImage(data: data)
+                                            }
+                                            
+                                        }
                                     }
                                 }
                                 
@@ -293,7 +294,6 @@ actor Counter {
     //        nonisolated func getCount() -> Int {
     //            count
     //        }
-    
 }
 
 #Preview {
